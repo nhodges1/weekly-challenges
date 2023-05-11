@@ -41,7 +41,7 @@ import java.util.Arrays;
     }
 
     public static double median(int[] a, int[] b){
-        double mnum;
+        double med;
         int[] merge = new int[a.length + b.length];
         int idx = 0;
 
@@ -62,13 +62,13 @@ import java.util.Arrays;
         if(merge.length % 2 == 0){ //even length
             int mid2 = merge.length / 2;
             //finds two middle numbers in array then finds average of them
-            mnum = (merge[mid2-1] + merge[mid2]) / 2.0;
+            med = (merge[mid2-1] + merge[mid2]) / 2.0;
         }
         else{
             int midIdx = merge.length / 2;
-            mnum = merge[midIdx];
+            med = merge[midIdx];
         }
 
-        return mnum;
+        return med;
     }
 }
